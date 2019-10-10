@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -lgmp -O
-OBJS = ./src/main.c
+CFLAGS = -lgmp
+OBJS = ./src/main.c ./src/jaq_quart.c
 main: $(OBJS)
 	$(CC) $(CFLAGS) -o elliptic_kurwa $(OBJS)
 clean:
